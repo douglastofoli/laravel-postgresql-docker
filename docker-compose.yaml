@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  nginx:
+    container_name: laravel-postgresql
+    image: douglastofoli/laravel-postgresql:latest
+    ports:
+      - 80:80
+    volumes:
+      - './:/var/www/html'
